@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="_1C_7._7_GJ_Launcher.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="exePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files\1Cv77\1cv7.exe</Value>
+    </Setting>
+    <Setting Name="basePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\ARM</Value>
+    </Setting>
+    <Setting Name="user1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ОператорККМ</Value>
+    </Setting>
+    <Setting Name="user2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Кладовщик</Value>
+    </Setting>
+    <Setting Name="user3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TSD</Value>
+    </Setting>
+    <Setting Name="user4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Администратор</Value>
+    </Setting>
+    <Setting Name="userpass1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">gjregfntkm</Value>
+    </Setting>
+    <Setting Name="userpass2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">gjregfntkm</Value>
+    </Setting>
+    <Setting Name="userpass3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">сканер</Value>
+    </Setting>
+    <Setting Name="userpass4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">vjybnjh</Value>
+    </Setting>
+    <Setting Name="ExclusiveMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SettingsPanel" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
