@@ -225,7 +225,6 @@
             this.panelControls.Name = "panelControls";
             this.panelControls.Size = new System.Drawing.Size(389, 219);
             this.panelControls.TabIndex = 5;
-            this.panelControls.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.panelControls_ControlRemoved);
             // 
             // LauncherMainForm
             // 

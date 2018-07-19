@@ -15,7 +15,7 @@ namespace _1C_7._7_GJ_Launcher
     {
         LoginControl loginControl = new LoginControl();
         SettingsControl settingsControl = new SettingsControl();
-        
+
         public LauncherMainForm()
         {
             InitializeComponent();
@@ -30,7 +30,7 @@ namespace _1C_7._7_GJ_Launcher
         [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
-        
+
         private void panel3_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -52,36 +52,31 @@ namespace _1C_7._7_GJ_Launcher
 
         private void LauncherMainForm_Load(object sender, EventArgs e)
         {
-            loginControl.Parent = panelControls;
-            settingsControl.Parent = panelControls;
-            panelControls.Controls.Add(loginControl); 
+            //loginControl.Parent = panelControls;
+            //settingsControl.Parent = panelControls;
+            panelControls.Controls.Add(loginControl);
+            panelControls.Controls.Add(settingsControl);
             loginControl.Dock = DockStyle.Fill; //LoginControl
+            loginControl.Visible = true;
+            settingsControl.Dock = DockStyle.Fill;
+            settingsControl.Visible = false;
+            
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            panelControls.Controls.Remove(loginControl);
-            //panelControls.Controls.Add(settingsControl);
-            //settingsControl.Dock = DockStyle.Fill;
+            //panelControls.Controls.Remove(loginControl); 
+            if (loginControl.Visible == true)
+            {
+                loginControl.Visible = false;
+                settingsControl.Visible = true;
+            }
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Environment.Exit(0); //Выход
-        }
-
-        private void panelControls_ControlRemoved(object sender, ControlEventArgs e)
-        {
-            if (loginControl.Visible == false)
-            {
-                panelControls.Controls.Add(settingsControl);
-                settingsControl.Dock = DockStyle.Fill;
-                if (settingsControl.Visible == false)
-                {
-                    panelControls.Controls.Add(loginControl);
-                    loginControl.Dock = DockStyle.Fill;
-                }
-            }
         }
     }
 }
