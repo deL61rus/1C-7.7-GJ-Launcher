@@ -60,9 +60,7 @@ namespace _1C_7._7_GJ_Launcher
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            panelControls.Controls.Remove(loginControl);
-            //panelControls.Controls.Add(settingsControl);
-            //settingsControl.Dock = DockStyle.Fill;
+            panelControls.Controls.Remove(loginControl);            
         }
 
         private void btnExit_Click(object sender, EventArgs e)
